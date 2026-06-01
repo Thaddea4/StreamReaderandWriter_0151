@@ -33,3 +33,19 @@ public:
         }
     }
 };
+
+void tampilData()
+{
+    ifstream file("gudang.txt");
+    string barang;
+    int no = 1;
+
+    cout << "\n===== DATA GUDANG =====\n";
+
+    while (getline(file, barang))
+    {
+        cout << no++ << ". " << barang << endl;
+    }
+
+    file.close();
+}

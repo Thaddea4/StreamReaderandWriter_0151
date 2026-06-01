@@ -10,4 +10,10 @@ int main()
     
     cout << "Masukkan nama file : ";
     cin >> NamaFile;
+    
+    ofstream outfile;
+    
+    outfile.open(NamaFile + ".txt", ios::out);
+
+    cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 }

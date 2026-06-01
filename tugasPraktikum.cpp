@@ -18,4 +18,18 @@ public:
         rak[1] = "Mouse";
         rak[2] = "Printer";
     }
+    
+    string ambilProduk(size_t nomorRak)
+    {
+        try
+        {
+            return rak.at(nomorRak);
+        }
+        catch (out_of_range&)
+        {
+            throw string("Gagal Mengambil Barang : Rak nomor " +
+                         to_string(nomorRak) +
+                         " kosong atau tidak tersedia!");
+        }
+    }
 };

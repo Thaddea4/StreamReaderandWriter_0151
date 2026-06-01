@@ -8,4 +8,11 @@ int main()
 
     //deklarasi variabel baris untuk menyimpan data string
     string baris;
+    
+    ofstream outfile;
+    
+    outfile.open("contohfile.txt");
+
+    cout << ">= Menulis file, \'q\' untuk keluar" << endl;
+
 }
